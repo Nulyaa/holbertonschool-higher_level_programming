@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 def print_last_digit(number):
-    last_digit = abs(number) % 10
-    if last_digit < 0:
-        last_digit = -last_digit
-    print(last_digit, end="")
+    last_digit = abs(number) % 10  # Get the last digit
+    print(last_digit, end="")  # Print it without a newline
     return last_digit

@@ -8,4 +8,3 @@ def uppercase(str):
             result += i  # Keep the character as-is if not lowercase
 
     print("{}".format(result))  # Print the final result (no trailing space)
-    

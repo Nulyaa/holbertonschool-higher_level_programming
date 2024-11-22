@@ -1,19 +1,9 @@
 #!/usr/bin/python3
 """
-hfghgfhgfjh
-jg
-gjghj
+This module defines an empty class Square.
 """
 
 
-def square_matrix_simple(matrix=[]):
-    """
-    Squares each element of a matrix (list of lists).
-
-    Args:
-        matrix (list): A 2D list (matrix) where each element is a number.
-
-    Returns:
-        list: A new matrix (2D list) with each element squared.
-    """
-    return [[x**2 for x in row] for row in matrix]
+class Square:
+    """An empty class that defines a square."""
+    pass

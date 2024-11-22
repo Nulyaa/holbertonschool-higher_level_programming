@@ -3,7 +3,6 @@
 This module defines a class Square with size and position attributes.
 """
 
-
 class Square:
     """A class that defines a square with its size and position."""
 
@@ -13,7 +12,6 @@ class Square:
 
         Args:
             size: The size of the square.
-            position: A tuple of two integers representing the position of the square.
         """
         self.size = size
         self.position = position
@@ -39,7 +37,9 @@ class Square:
     @position.setter
     def position(self, value):
         if isinstance(value, tuple) and len(value) == 2:
-            if all(isinstance(i, int) for i in value) and all(i >= 0 for i in value):
+            is_all_int = all(isinstance(i, int) for i in value)
+            is_all_positive = all(i >= 0 for i in value)
+            if is_all_int and is_all_positive:
                 self.__position = value
             else:
                 raise TypeError("position must be a tuple of 2 positive integers")

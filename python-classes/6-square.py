@@ -3,6 +3,7 @@
 This module defines a class Square with size and position attributes.
 """
 
+
 class Square:
     """A class that defines a square with its size and position."""
 
@@ -58,4 +59,3 @@ class Square:
             # Print the square, each row prefixed with horizontal space (x-offset)
             for i in range(self.__size):
                 print(" " * self.__position[0] + "#" * self.__size)
-
